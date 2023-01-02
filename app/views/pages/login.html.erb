@@ -1,12 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
-      <h2> Signup </h2>
+      <h2> Log in </h2>
         <%= form_with url: login_path, local: true, method: :post do | form |  %>
           <div class="mb-3">
             <%= form.label :email, class:'form-label' %>
             <%= form.text_field :email, type: 'email', autofocus: 'true', class:'form-control' %>
-            <div id="emailHelp" class="form-text"> We'll never share your email with anyone else! </div>
           </div>
           <div class="mb-3">
             <%= form.label :password, class:'form-label' %>
@@ -14,6 +13,7 @@
           </div>
           <%= form.submit 'Login', class:'btn btn-primary' %>
         <% end %>
+        <%= link_to "New user? Sign up", signup_path %>
     </div>
   </div>  
 </div>

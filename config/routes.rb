@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/', to: 'pages#index'
   get '/signup', to: 'pages#signup'
   get '/home', to: 'pages#home'
+  get '/login', to: 'pages#login'
   
   post '/login', to: 'pages#login'
   post '/logout', to: 'pages#logout'
