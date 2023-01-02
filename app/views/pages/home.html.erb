@@ -1,0 +1,8 @@
+<div class="container mx-2">
+  <div class="row mt-5">
+    <h3>
+      <%= session[:data]['email']  %>
+    </h3>
+    <%= button_to "Logout", logout_path, class: 'btn btn-outline-danger' %>
+  </div>
+</div>
